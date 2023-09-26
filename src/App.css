@@ -1,0 +1,81 @@
+/* This stylizes the background of the webpage. I wanted the app to be centered relative to the webpage. */
+body {
+  background-color: #48789c;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Ensure the page takes up the full viewport height */
+}
+
+/* This stylizes the app container itself, including the border, background, etc. I'm very picky about how things are presented and wanted appropriate padding and something neat and clean. I can also adjust the size of the actual app itself with max-width. */
+.app-container {
+  border: 5px solid #333; 
+  padding: 30px;
+  background-color: #9fc3df; 
+  text-align: center; 
+  max-width: 500px; 
+  margin: 0 auto; 
+  border-radius: 10px; 
+}
+
+* {
+  font-family: sans-serif;
+}
+
+/* Everything from this point on stylizes the buttons. I made some significant changes to the original css. For example, I wanted to visually group different actions with color: the operator buttons are their own group and use a dark blue background. The reset buttons, on the other hand, are on a white background. I also moved these two buttons to be more associated with the user action. */
+input,
+button {
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background-color: white;
+  color: #102c54;
+  border: 1px solid #1f2185; 
+  margin-right: 5px; 
+}
+
+/* Styling for operator buttons */
+.operator-button {
+  background: whitesmoke;
+  background-color: #102c54; 
+  color: white; 
+  padding: 4px 8px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+/* Styling for the result group */
+.result-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px; 
+}
+
+/* I thought that this looked awkward, so I adjusted the font size to make it more prominent and readable. */
+.result-group p {
+  margin: 0; 
+  flex: 1; 
+  font-size: 20px; 
+  background-color: transparent; 
+  border: none; 
+  cursor: default; 
+}
+
+/* Ideally I would've had the reset buttons as one class, but since they serve different outcomes despite being similar actions, I chose to keep them separate. I had this problem with the logic of the code, too. For simplicity, I went this route.  */
+.result-group button.reset-result {
+  background: whitesmoke;
+}
+
+.input-group button.reset-input {
+  background: whitesmoke; 
+}
+
+/* And I wanted the operator buttons to be distinct, hence... */
+.operator-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; 
+}
