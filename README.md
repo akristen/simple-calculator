@@ -44,6 +44,4 @@ The other hard part for me was figuring out packages. Obviously `create-react-ap
 
 ## Conclusion
 
-Anyway, cheers.
-
-![Screenshot](screenshot.png)
+Anyway, cheers: https://github.com/akristen/simple-calculator/blob/main/public/screenshot.png 
